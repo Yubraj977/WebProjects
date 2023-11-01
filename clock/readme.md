@@ -1,0 +1,1 @@
+This is the clock site i take refrence it from the yt channel called web dev simplified but i created it with my own without looking his code line by line

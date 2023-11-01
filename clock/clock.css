@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.clock{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+    background-color: rgba(0, 0, 243, 0.37);
+    /* --------for making the clock in the centre */
+    border-radius: 50%;   
+    border: 2px solid black;
+}
+/* ----------------------for postining the numbers in the best suitable plaace--- */
+
+.clock .number{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 1.3rem;
+   
+    text-align: center;
+
+
+}
+.clock .number1{transform: rotate(30deg);}
+.clock .number2{transform: rotate(60deg);}
+.clock .number3{transform: rotate(90deg);}
+.clock .number4{transform: rotate(120deg);}
+.clock .number5{transform: rotate(150deg);}
+.clock .number6{transform: rotate(180deg);}
+.clock .number7{transform: rotate(210deg);}
+.clock .number8{transform: rotate(240deg);}
+.clock .number9{transform: rotate(270deg);}
+.clock .number10{transform: rotate(300deg);}
+.clock .number11{transform: rotate(330deg);}
+.clock .number12{transform: rotate(360deg);}
+
+
+/* ----styling the hands  */
+.hand{
+    --rotation:0;
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+   
+    
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  
+    /* for set from where to rotate */
+    transform-origin: bottom;
+   
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 2;
+
+}
+
+/* styling the single hands */
+
+.clock .hand.seconds{
+    height: 45%;
+    width: 5px;
+    background-color: red;
+    
+    
+}
+.clock .hand.minutes{
+    height: 40%;
+    width: 7px;
+    background-color: black;
+    
+}
+.clock .hand.hours{
+    height: 35%;
+    width: 10px;
+    background-color: black;
+    
+}
+
+/* adding the black round ball in the center */
+.clock::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+    height: 15px;
+    width: 15px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
