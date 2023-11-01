@@ -18,3 +18,9 @@ how to contribute here
  <p>this is the simple clock made with help of yt vedio </p>
 <a href="./clock/clock.html"> <button >show result</button></a>
 <p>made by <a href="https://www.facebook.com/salk.sipe">yubraj khatri</a></p>
+
+5. for your project=> create one folder and code there >>>to connect use anchor tag inside button like project 1
+
+6.commit the changes and push and do pull requst
+
+7.Dont forget mo mention your name and your own readme abuot the project
