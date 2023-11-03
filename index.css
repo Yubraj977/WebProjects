@@ -2,6 +2,10 @@ html{
     font-size: 10px;
 }
 .p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     aspect-ratio: 1/1;
     width: 20%;
     padding: 1.5rem;
@@ -22,6 +26,9 @@ html{
 .main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 button {
     display: inline-block;
