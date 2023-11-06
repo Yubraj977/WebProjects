@@ -1,5 +1,5 @@
 const changebtn = document.getElementsByClassName("switch")[0]; 
-const main = document.getElementsByClassName("main")[0]; 
+const main = document.getElementsByTagName("body")[0]
 
 
 changebtn.addEventListener('click', function () {
