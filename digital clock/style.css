@@ -49,7 +49,8 @@
 .container{
    
     position: absolute;
-    
+    top: 0;
+    right: 0;
    
     display: flex;
     align-items: center;
@@ -91,7 +92,7 @@ input:checked + .button::before{
     transition-delay: 0.2s;
     
 }
-/* @keyframes toggle{
+@keyframes toggle{
     0%{
         width: 2.8125rem;
         height: 2.8125rem;
@@ -115,7 +116,7 @@ input:checked + .button::before{
         width: 2.8125rem;
         height: 2.8125rem;
     }
-} */
+}
 @media (max-width: 480px) {
  *{
     font-size: 10px;
