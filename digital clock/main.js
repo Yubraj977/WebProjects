@@ -18,9 +18,10 @@ function updateClock(){
   const minutes=String(now.getMinutes()).padStart(2,"0")
   const seconds=String(now.getSeconds()).padStart(2,"0")
   const millisec=String(now.getMilliseconds()).padStart(3,"0")
+  
  
   timestring=`${hours}:${minutes}:${seconds}`
-  updateElement.textContent=timestring
+  updateElement.innerText=timestring
 }
 updateClock();
 setInterval(updateClock,200)
