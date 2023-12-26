@@ -1,0 +1,14 @@
+<audio id="audioPlayer" src="https://api.dictionaryapi.dev/media/pronunciations/en/test-us.mp3"></audio>
+
+<script>
+  document.getElementById('audioIcon').addEventListener('click', function() {
+    var audioPlayer = document.getElementById('audioPlayer');
+    
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+      audioPlayer.currentTime = 0; // Reset to the beginning
+    }
+  });
+</script>

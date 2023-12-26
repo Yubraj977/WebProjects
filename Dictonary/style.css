@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.main{
+    background: beige;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.dictonaryarea{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+    border: 1px solid black;
+    width: 500px; /* Adjust the width as needed */
+    max-height: 600px;
+    min-height: 500px;
+    padding: 20px;
+    background: linear-gradient(to right, #3498db, #425d77); /* Gradient colors, change as needed */
+    padding: 20px; /* Adjust padding as needed */
+    color: #000000;   
+    border-radius: 15px ;
+}
+.dictonaryarea h1{
+    font-size: 20px;
+}
+.search{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+input {
+    font-size: 30px;
+    width: 80%; /* Adjust the width as needed */
+    padding: 10px; /* Add padding if needed */
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid black;
+
+}
+input::placeholder{
+    color: black;
+    opacity: 50%;
+}
+
+
+
+
+.wa{
+    display: flex;
+    justify-content: space-between;
+}
+#speechp{
+    border-right: 2px solid black;
+}
+#find {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    background-color: #000913; /* Set the background color */
+    color: #fff; /* Set the text color */
+    border: none; /* Remove the border */
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
+}
+
+#find:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+.speech{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-left: 4px dashed #f8f8f8; /* Dashed border with a different color */
+    padding-left: 12px;
+}
+.definations{
+    margin-top: 20px;
+    border-left: 4px dashed #000000; /* Dashed border with a different color */
+    padding-left: 12px;  
+}
+.synonyms{
+    margin-left: 20px;
+    margin-top: 20px;
+    border-left: 4px dashed #ffd000; /* Dashed border with a different color */
+    padding-left: 12px;
+}
+.antonyms{
+    margin-left: 20px;
+    margin-top: 20px;
+    border-left: 4px dashed #02d6fccb; /* Dashed border with a different color */
+    padding-left: 12px;
+}
+#play{
+font-size: 20px;
+}
+#err{
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .dictonaryarea{
+    height: 100%;
+    max-width: 400px;
+  
+  }
+  }
